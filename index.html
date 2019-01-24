@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Tank Game Project</title>
+  <!-- CSS Section -->
+  <link rel="stylesheet" href="./Content/game.css">
+</head>
+<body>
+  
+  <div id="score">
+    <div id="score_player1">
+        <label style= "color:crimson; font-family:Dock51;">Health : </label>
+        <label id="p1_health"  style= "color:crimson; font-family:Dock51;">0.00</label> <br>
+        <label style= "color:greenyellow; font-family:Dock51;">Fuel    :  </label>
+        <label id="p1_fuel"  style= "color:greenyellow; font-family:Dock51;">0.00</label> <br>
+        <label style= "color:dodgerblue; font-family:Dock51;">Score : </label>
+        <label id="p1_score" style= "color:dodgerblue; font-family:Dock51;">0.00</label>
+    </div>
+    <div id="title_center" style="font-family:Dock51;">WARRIOR EAGLE</div>
+    <div id="score_player2">
+        <label style= "color:crimson; font-family:Dock51;">Health : </label>
+        <label id="p2_health"  style= "color:crimson; font-family:Dock51;">0.00</label> <br>
+        <label style= "color:greenyellow; font-family:Dock51;">Fuel    : </label>
+        <label id="p2_fuel"  style= "color:greenyellow; font-family:Dock51;">0.00</label> <br>
+        <label style= "color:dodgerblue; font-family:Dock51;">Score   : </label>
+        <label id="p2_score" style= "color:dodgerblue; font-family:Dock51;">0.00</label>
+    </div>
+
+  </div>
+  <!-- <canvas id="canvasScoreboard" width="1500" height="100"></canvas> -->
+  <canvas id="canvas" width="1500" height="800"></canvas>
+
+  <div id="footer">
+      <div id="footer_left"></div>
+      <div id="footer_center"style="font-family:Dock51;">
+        COMP397 - Web Games / Professor : <n>Tom Tsiliopoulos</n>
+        <div id="tip"> press HOME - For Help  or  Page-Up - For Credits</div>
+      </div>
+      <div id="footer_right"></div>
+    </div>
+
+  <!-- JavaScript Section -->
+
+  <!-- CreateJS Libraries -->
+  <!-- <script src="./node_modules/easeljs/lib/easeljs.min.js"></script>
+  <script src="./node_modules/tweenjs/lib/tweenjs.min.js"></script>
+  <script src="./node_modules/soundjs/lib/soundjs.min.js"></script>
+  <script src="./node_modules/preloadjs/lib/preloadjs.min.js"></script> -->
+  <script src="https://code.createjs.com/1.0.0/easeljs.min.js"></script>
+  <script src="https://code.createjs.com/1.0.0/tweenjs.min.js"></script>
+  <script src="https://code.createjs.com/1.0.0/soundjs.min.js"></script>
+  <script src="https://code.createjs.com/1.0.0/preloadjs.min.js"></script>
+  <!-- Game Scripts -->
+
+  <!-- Configuration Files -->
+  <script src="./Scripts/config/scene.js"></script>
+  <script src="./Scripts/config/keys.js"></script>
+  <script src="./Scripts/config/keycode.js"></script>
+  <script src="./Scripts/config/movement.js"></script>
+
+  <!-- Math Library -->
+  <script src="./Scripts/math/vec2.js"></script>
+
+  <!-- objects -->
+  <script src="./Scripts/objects/game.js"></script>
+  <script src="./Scripts/objects/label.js"></script>
+  <script src="./Scripts/objects/button.js"></script>
+  <script src="./Scripts/objects/scene.js"></script>
+  <script src="./Scripts/objects/gameobject.js"></script>
+
+  <!-- Game Managers -->
+  <script src="./Scripts/managers/newkeyboard.js"></script>
+  <script src="./Scripts/managers/keyboard.js"></script>
+  <script src="./Scripts/managers/scoreboard.js"></script>
+  <script src="./Scripts/managers/collision.js"></script>
+
+  <!-- Game Objects -->
+  <script src="./Scripts/objects/bullet.js"></script>
+  <script src="./Scripts/objects/newbullet.js"></script>
+  <script src="./Scripts/objects/tank.js"></script>
+  <script src="./Scripts/objects/statusbackground.js"></script>
+  <script src="./Scripts/objects/statushealth.js"></script>
+  <script src="./Scripts/objects/statusfuel.js"></script>
+  <script src="./Scripts/objects/newtank.js"></script>
+  <script src="./Scripts/objects/enemy.js"></script>
+  <script src="./Scripts/objects/terrain.js"></script>
+  <script src="./Scripts/objects/transition.js"></script>
+  <script src="./Scripts/objects/barrier.js"></script>
+  <script src="./Scripts/objects/metal_barrier.js"></script>
+  <script src="./Scripts/objects/rock_barrier.js"></script>
+  <script src="./Scripts/objects/powerup.js"></script>
+  <script src="./Scripts/objects/popup.js"></script>
+
+  <!-- Scenes -->
+  <script src="./Scripts/scenes/over.js"></script>
+  <!-- <script src="./Scripts/scenes/score.js"></script> -->
+  <script src="./Scripts/scenes/play1.js"></script>
+  <script src="./Scripts/scenes/play2.js"></script>
+  <script src="./Scripts/scenes/play3.js"></script>
+  <script src="./Scripts/scenes/playscene.js"></script>
+  <script src="./Scripts/scenes/roundInform.js"></script>
+  <script src="./Scripts/scenes/start.js"></script>
+
+  <script src="./Scripts/core/game.js"></script>
+</body>
+</html>

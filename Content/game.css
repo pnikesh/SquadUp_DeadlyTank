@@ -1,0 +1,80 @@
+html{
+  background-color: #000000;
+}
+
+#canvas {
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px white dotted;
+}
+#score{
+  border: 1px white dotted;
+  color: white;
+  width: 1500px;
+  height: 65px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+#score_player1{
+  padding-left: 5px;
+  float: left;
+  width: 20%;
+  text-decoration-style:double;
+  font-size: 20px; 
+  font-weight: bolder;
+}
+
+
+#score_player2{
+  /* position: relative;*/
+  float: right;
+  width: 10%;
+  text-align: left;  
+  font-size: 20px; 
+  font-weight: bolder;
+}
+
+#title_center{
+  /* position: relative;*/
+  float: left;
+  width: 60%;
+  text-align: center;  
+  font-size: 70px; 
+  font-weight: bolder;
+  padding-top: -10;
+  text-align: center;
+  color: #248c08;
+  line-height: 100%;
+  vertical-align: middle;
+  
+}
+
+#footer{
+  border: 1px white dotted;
+  color: darkgoldenrod;
+  width: 1500px;
+  height: 65px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+  font-size: 35px;
+}
+
+@font-face {
+  font-family: 'Dock51';
+  src: url('../Assets/fonts/dock51.woff2') format('woff2'),
+       url('../Assets/fonts/dock51.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+#tip{
+  font-size: 1.1vw;
+  margin-top: 0.4vw;
+  color: #248c08;
+}
